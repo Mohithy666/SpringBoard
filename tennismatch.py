@@ -10,7 +10,7 @@ model_path = 'best.pt'
 
 try:
     model = torch.hub.load('.', 'custom', path=model_path, source='local')
-    st.success("Model loaded successfully!")
+    st.success("Model loaded successfully!") 
 except Exception as e:
     st.error(f"Error loading model: {e}")
     raise e
